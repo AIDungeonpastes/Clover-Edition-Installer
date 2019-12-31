@@ -30,7 +30,7 @@ if "%versionprompt%"=="10" (
 
 if "%versionprompt%"=="8.1" (
 	start /wait %curl% -o %~dp0cuda_10.2.89_441.22_windows.exe http://developer.download.nvidia.com/compute/cuda/10.2/Prod/local_installers/cuda_10.2.89_441.22_windows.exe
-	echo 832aa4221dc001587a5a87d092ae6cec  cuda_10.2.89_441.22_windows.exe | hashsum /a MD5 /c /q && (
+		echo 832aa4221dc001587a5a87d092ae6cec  cuda_10.2.89_441.22_windows.exe | hashsum /a MD5 /c /q && (
 		echo Hashcheck on cuda_10.2.89_441.22_windows.exe passed.
 		start /wait %~dp0cuda_10.2.89_441.22_windows.exe
 	) || (
@@ -42,7 +42,7 @@ if "%versionprompt%"=="8.1" (
 
 if "%versionprompt%"=="7" (
 	start /wait %curl% -o %~dp0cuda_10.2.89_441.22_windows.exe http://developer.download.nvidia.com/compute/cuda/10.2/Prod/local_installers/cuda_10.2.89_441.22_windows.exe
-	echo 832aa4221dc001587a5a87d092ae6cec  cuda_10.2.89_441.22_windows.exe | hashsum /a MD5 /c /q && (
+		echo 832aa4221dc001587a5a87d092ae6cec  cuda_10.2.89_441.22_windows.exe | hashsum /a MD5 /c /q && (
 		echo Hashcheck on cuda_10.2.89_441.22_windows.exe passed.
 		start /wait %~dp0cuda_10.2.89_441.22_windows.exe
 	) || (
