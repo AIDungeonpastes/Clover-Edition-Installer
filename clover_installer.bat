@@ -1,6 +1,7 @@
 @echo off
 
 title Clover Edition Installer
+setlocal
 set curl=%~dp0curl\curl.exe
 
 echo We'll start by installing Python, and remember to tick the 'Add Python 3.7 to PATH' box.

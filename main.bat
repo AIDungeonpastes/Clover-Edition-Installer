@@ -1,6 +1,8 @@
 @echo off
 
 title Clover Edition Installer
+setlocal
+if exist %USERPROFILE%\AppData\Local\Programs\Python\Python37\Scripts set PATH=%PATH%;%USERPROFILE%\AppData\Local\Programs\Python\Python37\Scripts
 set aria=%~dp0aria2\aria2c.exe
 
 start /wait pip install torch -f https://download.pytorch.org/whl/torch_stable.html
