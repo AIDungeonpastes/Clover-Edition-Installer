@@ -3,7 +3,7 @@
 title Clover Edition Installer
 set curl=%~dp0curl\curl.exe
 
-echo We'll start by installing Python, and remember to tick the ADD PIP TO PATH option.
+echo We'll start by installing Python, and remember to tick the 'Add Python 3.7 to PATH' box.
 start /wait %curl% -o %~dp0python-3.7.6-amd64.exe https://www.python.org/ftp/python/3.7.6/python-3.7.6-amd64.exe
 echo cc31a9a497a4ec8a5190edecc5cdd303  python-3.7.6-amd64.exe | hashsum /a MD5 /c /q && (
 	echo Hashcheck on python-3.7.6-amd64.exe passed.
