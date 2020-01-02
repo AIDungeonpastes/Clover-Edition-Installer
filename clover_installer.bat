@@ -16,7 +16,6 @@ echo cc31a9a497a4ec8a5190edecc5cdd303  python-3.7.6-amd64.exe | hashsum /a MD5 /
 )
 
 echo Now we install Nvidia CUDA.
-
 set /p versionprompt=What version of Windows are you on? (Options: 10, 8.1, 7)> 
 if "%versionprompt%"=="10" (
 	start /wait %curl% -o %~dp0cuda_10.2.89_441.22_win10.exe http://developer.download.nvidia.com/compute/cuda/10.2/Prod/local_installers/cuda_10.2.89_441.22_win10.exe
