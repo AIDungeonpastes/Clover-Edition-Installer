@@ -6,7 +6,7 @@ if exist %USERPROFILE%\AppData\Local\Programs\Python\Python37\Scripts set PATH=%
 set aria=%~dp0aria2\aria2c.exe
 
 start /wait pip install torch -f https://download.pytorch.org/whl/torch_stable.html
-start /wait pip install transformers pyjarowinkler colorama
+start /wait pip install transformers colorama
 start /wait git clone --depth=1 "https://github.com/cloveranon/Clover-Edition/"
 echo We are now starting to download the model, It will take a while to get up to speed.
 echo DHT errors are normal.
